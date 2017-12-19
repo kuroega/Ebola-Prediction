@@ -22,7 +22,7 @@ The domain is https://data.humdata.org/ebola, a very helpful website of sharing 
 
 ### Cleanse Data
 
-We used the most popular and powerful libararies for raw data processing
+We used the most popular and powerful libararies for structral or raw data processing
 
 - Pandas
 - Numpy
