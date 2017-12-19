@@ -1,4 +1,7 @@
 # Ebola-Prediction
+
+Group 64: *Yuxiang Wang, Zixun Zheng*
+
 The final project of Intro to Machine Learning (EL-GY 9123)
 
 Since **Ebola Virus** busted out to be a super threat to the human being in all over the world, we have a concern about the future of our life. The undergoing medical research may also be assisted by the prediction of the virus spreading. In our project, we conducted a simple but dedicated approach to predict the virus versus the temperature of the locations/ countries that have reported confirmed Ebola cases. 
@@ -29,6 +32,7 @@ We used the most popular and powerful libararies for raw data processing
 all can be installed by `pip3 install`, and of course, we recommend you to choose Python `3.5.0` kernel.
 
 ### Model Selection
+For our problem, we want to find a great model to show how temperature and date relate to the probability of ebola. So, we try to find a "great" order of model that makes the predict precisely. In this program, we use from the 1st-order model to the 9th-order model for trainning and test, and then plot the result to find the "great" order model.
 
 ### Conclusion
 The quadradic model is approximately best fit for our prediction. It is also very simply understandable and intuitive that Ebola or some similar virus can be faster spreaded under an environment with higher average annual temperature. Thus we verified, geographically speaking, the countries in western African (Guinea, Liberia) can be directly threated by Ebola since its geographical specifications and underdeveloped poor medical treatment.
