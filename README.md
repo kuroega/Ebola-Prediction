@@ -31,13 +31,15 @@ We used the most popular and powerful libararies for structral or raw data proce
 
 > all can be installed by `pip3 install`, and of course, we recommend you to choose Python `3.5.0` kernel.
 
-The dataset cannot be used directly, we extracted the columns that represent the `comfirmed Ebola cases` and `total Ebola cases` for a given `date` over a range in the year of 2015. To normalize the data, we convert `date` to `the day in year` and divided by the maximum `day` value in our data as we usually do for data normalization.
+1. The dataset cannot be used directly, we extracted the columns that represent the `comfirmed Ebola cases` and `total Ebola cases` for a given `date` over a range in the year of 2015. 
 
-Also, we combined the Ebola case numbers with its corresponding `country`. 
+2. To normalize the data, we convert `date` to `the day in year` and divided by the maximum `day` value in our data as we usually do for data normalization.
 
-The temperature data is downloaded from several authorized websites, for the sake of clear presentation of the temperature data, we organized them in a list and hard-code instead of `get` from web.
+3. Also, we combined the Ebola case numbers with its corresponding `country`. 
 
-To study the underlying relation of temperature and Ebola cases that comfirmed, we use annual highest, lowest and average temperature to replace `country` column.
+4. The temperature data is downloaded from several authorized websites, for the sake of clear presentation of the temperature data, we organized them in a list and hard-code instead of `get` from web.
+
+5. To study the underlying relation of temperature and Ebola cases that comfirmed, we use annual highest, lowest and average temperature to replace `country` column.
 
 ### Model Selection
 For our problem, we want to find a great model to show how temperature and date relate to the probability of ebola. So, we try to find a "great" order of model that makes the predict precisely. In this program, we use from the 1st-order model to the 9th-order model for trainning and test, and then plot the result to find the "great" order model.
